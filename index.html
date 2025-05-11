@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quran Navigator</title>
+  
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
+
+  <!-- Theme color for mobile -->
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Custom CSS (Optional) -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: 'Scheherazade New', serif;
+      direction: rtl;
+      text-align: right;
+    }
+
+    .surah-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .surah-item {
+      padding: 15px;
+      background: #f0f0f0;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .surah-item:hover {
+      background-color: #e0e0e0;
+    }
+  </style>
+</head>
+<body id="body" class="bg-gray-100 text-gray-900 transition duration-300">
+
+  <div class="container mx-auto p-4 md:p-6 lg:p-8">
+    <h1 class="text-3xl font-bold text-center mb-8">القرآن الكريم</h1>
+    <div id="surah-list" class="surah-list"></div> <!-- Surah List will be populated here -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
